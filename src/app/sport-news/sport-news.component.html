@@ -1,0 +1,14 @@
+<div id="News">
+<h4>Sports News Headlines !!</h4>
+<div class="NewsList" id="NewsList">
+    <!--News Content-->
+
+    <div class="news_card" id="news_card" *ngFor="let d of SportDisplay">
+        <img src="{{d.multimedia[0].url}}">
+        <div class="container" id="container">
+            <h5>{{d.title}}</h5>
+            <button><a href="{{d.url}}" target="_blank">Read More</a></button>
+        </div>
+    </div>
+</div>
+</div>
